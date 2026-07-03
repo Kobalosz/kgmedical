@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="KGeeMediWorld">
+  <!-- Reversed / monochrome white mark (cross knocked out) for photo overlays. -->
+  <defs>
+    <mask id="kgeeCross">
+      <rect x="2" y="2" width="60" height="60" rx="16" fill="#fff"/>
+      <rect x="27" y="15" width="10" height="34" rx="2.5" fill="#000"/>
+      <rect x="15" y="27" width="34" height="10" rx="2.5" fill="#000"/>
+    </mask>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#fff" mask="url(#kgeeCross)"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="64" viewBox="0 0 300 64" role="img" aria-label="KGeeMediWorld">
+  <!-- Reversed / monochrome white lockup for dark or photographic backgrounds. -->
+  <defs>
+    <mask id="kgeeCross">
+      <rect x="4" y="4" width="56" height="56" rx="15" fill="#fff"/>
+      <rect x="27" y="17" width="10" height="30" rx="2.5" fill="#000"/>
+      <rect x="17" y="27" width="30" height="10" rx="2.5" fill="#000"/>
+    </mask>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="15" fill="#fff" mask="url(#kgeeCross)"/>
+  <text x="76" y="41" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="800" fill="#fff">KGeeMediWorld</text>
+</svg>
