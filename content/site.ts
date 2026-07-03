@@ -49,6 +49,8 @@ export interface ValueProp {
 export interface SiteContent {
   name: string;
   tagline: string;
+  /** Meta description for SEO / social cards (~155 chars). */
+  description: string;
   nav: NavLink[];
   hero: {
     headline: string;
@@ -92,6 +94,8 @@ export interface SiteContent {
 export const siteContent: SiteContent = {
   name: "KGeeMediWorld",
   tagline: "Your dependable medical supply partner",
+  description:
+    "KGeeMediWorld delivers the medical supplies healthcare businesses depend on — reliable, on-time delivery for hospitals, pharmacies, and clinics.",
 
   nav: [
     { label: "About", href: "#about" },

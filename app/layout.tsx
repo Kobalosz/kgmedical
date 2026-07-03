@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { siteContent } from "@/content/site";
+import { siteUrl } from "@/lib/site-url";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -10,10 +12,40 @@ const inter = Inter({
   display: "swap",
 });
 
+const title = `${siteContent.name} — ${siteContent.tagline}`;
+
 export const metadata: Metadata = {
-  title: "KGeeMediWorld — Your dependable medical supply partner",
-  description:
-    "KGeeMediWorld delivers the medical supplies healthcare businesses depend on — reliable, on-time delivery for hospitals, pharmacies, and clinics.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: title,
+    template: `%s · ${siteContent.name}`,
+  },
+  description: siteContent.description,
+  applicationName: siteContent.name,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName: siteContent.name,
+    title,
+    description: siteContent.description,
+    url: "/",
+    locale: "en_US",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: title,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description: siteContent.description,
+    images: ["/og-image.png"],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
