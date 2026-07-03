@@ -10,7 +10,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative isolate overflow-hidden bg-gradient-to-b from-teal-50 via-white to-white"
+      className="relative isolate overflow-hidden bg-linear-to-b from-teal-50 via-white to-white"
     >
       {/* Decorative, non-interactive background glow. */}
       <div
@@ -39,7 +39,7 @@ export function Hero() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg" className="h-12 px-6 text-base">
               <a href={hero.primaryCta.href}>
-                <Phone />
+                <Phone aria-hidden="true" />
                 {hero.primaryCta.label}
               </a>
             </Button>
@@ -50,7 +50,7 @@ export function Hero() {
               className="h-12 px-6 text-base"
             >
               <a href={hero.secondaryCta.href}>
-                <Mail />
+                <Mail aria-hidden="true" />
                 {hero.secondaryCta.label}
               </a>
             </Button>

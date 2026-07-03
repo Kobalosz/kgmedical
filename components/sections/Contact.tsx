@@ -17,7 +17,7 @@ export function Contact() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button asChild size="lg" className="h-12 px-6 text-base">
                 <a href={contact.phoneHref}>
-                  <Phone />
+                  <Phone aria-hidden="true" />
                   Call {contact.phone}
                 </a>
               </Button>
@@ -28,7 +28,7 @@ export function Contact() {
                 className="h-12 px-6 text-base"
               >
                 <a href={`mailto:${contact.email}`}>
-                  <Mail />
+                  <Mail aria-hidden="true" />
                   Email us
                 </a>
               </Button>

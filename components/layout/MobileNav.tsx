@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -12,6 +12,16 @@ import type { CtaLink, NavLink } from "@/content/site";
  */
 export function MobileNav({ nav, cta }: { nav: NavLink[]; cta: CtaLink }) {
   const [open, setOpen] = useState(false);
+
+  // Close the menu when the user presses Escape.
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
 
   return (
     <div className="md:hidden">

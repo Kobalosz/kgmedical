@@ -59,8 +59,14 @@ export default function RootLayout({
       className={`${inter.variable} h-full scroll-smooth antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <a
+          href="#top"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-60 focus:rounded-md focus:bg-teal-700 focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-white"
+        >
+          Skip to content
+        </a>
         <Header />
-        <main id="top" className="flex-1">
+        <main id="top" tabIndex={-1} className="flex-1 focus:outline-none">
           {children}
         </main>
         <Footer />
