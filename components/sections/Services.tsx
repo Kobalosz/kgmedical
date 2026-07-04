@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { Container } from "@/components/layout/Container";
 import { SectionHeading } from "@/components/sections/SectionHeading";
 import { iconMap } from "@/components/sections/icon-map";
@@ -9,11 +11,21 @@ export function Services() {
   return (
     <section id="services" className="scroll-mt-20 bg-slate-50 py-20 sm:py-28">
       <Container>
-        <SectionHeading
-          title={services.heading}
-          description={services.intro}
-          className="max-w-2xl"
-        />
+        <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+          <SectionHeading
+            title={services.heading}
+            description={services.intro}
+            className="max-w-2xl"
+          />
+          <Image
+            src="/graphics/kgeemediworld-shipping-boxes.png"
+            alt="Branded KGeeMediWorld shipping cartons"
+            width={840}
+            height={520}
+            sizes="(min-width: 768px) 288px, 55vw"
+            className="h-auto w-44 shrink-0 sm:w-56 md:w-72"
+          />
+        </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {services.items.map((service) => {
             const Icon = iconMap[service.icon];
