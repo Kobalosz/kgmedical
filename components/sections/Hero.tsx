@@ -2,6 +2,7 @@ import { Mail, Phone } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout/Container";
+import { HeroIllustration } from "@/components/sections/HeroIllustration";
 import { siteContent } from "@/content/site";
 
 export function Hero() {
@@ -23,38 +24,42 @@ export function Hero() {
       />
 
       <Container className="py-20 sm:py-28 lg:py-32">
-        <div className="max-w-3xl">
-          <p className="inline-flex items-center rounded-full border border-teal-200 bg-teal-100/70 px-3 py-1 text-sm font-medium text-teal-800">
-            {tagline}
-          </p>
+        <div className="grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+          <div>
+            <p className="inline-flex items-center rounded-full border border-teal-200 bg-teal-100/70 px-3 py-1 text-sm font-medium text-teal-800">
+              {tagline}
+            </p>
 
-          <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-balance text-slate-900 sm:text-5xl lg:text-6xl">
-            {hero.headline}
-          </h1>
+            <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-balance text-slate-900 sm:text-5xl lg:text-6xl">
+              {hero.headline}
+            </h1>
 
-          <p className="mt-6 max-w-2xl text-lg text-pretty text-slate-600 sm:text-xl">
-            {hero.subhead}
-          </p>
+            <p className="mt-6 max-w-xl text-lg text-pretty text-slate-600 sm:text-xl">
+              {hero.subhead}
+            </p>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button asChild size="lg" className="h-12 px-6 text-base">
-              <a href={hero.primaryCta.href}>
-                <Phone aria-hidden="true" />
-                {hero.primaryCta.label}
-              </a>
-            </Button>
-            <Button
-              asChild
-              variant="outline"
-              size="lg"
-              className="h-12 px-6 text-base"
-            >
-              <a href={hero.secondaryCta.href}>
-                <Mail aria-hidden="true" />
-                {hero.secondaryCta.label}
-              </a>
-            </Button>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Button asChild size="lg" className="h-12 px-6 text-base">
+                <a href={hero.primaryCta.href}>
+                  <Phone aria-hidden="true" />
+                  {hero.primaryCta.label}
+                </a>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="h-12 px-6 text-base"
+              >
+                <a href={hero.secondaryCta.href}>
+                  <Mail aria-hidden="true" />
+                  {hero.secondaryCta.label}
+                </a>
+              </Button>
+            </div>
           </div>
+
+          <HeroIllustration className="hidden w-full lg:block" />
         </div>
       </Container>
     </section>

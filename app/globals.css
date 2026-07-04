@@ -134,3 +134,53 @@
     scroll-behavior: auto;
   }
 }
+
+/* Hero illustration ambient animations (CSS-only, no JS). */
+@keyframes kg-dash {
+  to {
+    stroke-dashoffset: -60;
+  }
+}
+@keyframes kg-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes kg-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+.kg-route {
+  animation: kg-dash 1.6s linear infinite;
+}
+.kg-supply-1 {
+  animation: kg-float 4s ease-in-out infinite;
+}
+.kg-supply-2 {
+  animation: kg-float 4s ease-in-out 0.7s infinite;
+}
+.kg-supply-3 {
+  animation: kg-float 4s ease-in-out 1.4s infinite;
+}
+.kg-pin {
+  animation: kg-float 3.2s ease-in-out infinite;
+}
+.kg-van {
+  animation: kg-bob 2.2s ease-in-out infinite;
+}
+
+/* Turn off the ambient motion for users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  .kg-animate * {
+    animation: none !important;
+  }
+}
