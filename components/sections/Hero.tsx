@@ -24,7 +24,7 @@ export function Hero() {
       />
 
       <Container className="py-20 sm:py-28 lg:py-32">
-        <div className="grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+        <div className="grid gap-8 lg:grid-cols-[1fr_1.4fr] lg:items-center">
           <div>
             <p className="inline-flex items-center rounded-full border border-teal-200 bg-teal-100/70 px-3 py-1 text-sm font-medium text-teal-800">
               {tagline}
