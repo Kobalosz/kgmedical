@@ -95,7 +95,7 @@ export const siteContent: SiteContent = {
   name: "KGeeMediWorld",
   tagline: "Your dependable medical supply partner",
   description:
-    "KGeeMediWorld delivers the medical supplies healthcare businesses depend on — reliable, on-time delivery for hospitals, pharmacies, and clinics.",
+    "KGeeMediWorld delivers the medical supplies healthcare businesses depend on. Reliable, on-time delivery for hospitals, pharmacies, and clinics.",
 
   nav: [
     { label: "About", href: "#about" },
@@ -105,9 +105,9 @@ export const siteContent: SiteContent = {
   ],
 
   hero: {
-    headline: "The medical supplies your facility depends on — delivered on time.",
+    headline: "The medical supplies your facility depends on, delivered on time.",
     subhead:
-      "KGeeMediWorld is a wholesale medical supply delivery partner for hospitals, pharmacies, and clinics. Dependable stock, fast turnaround, and a team that treats your supply chain like it matters.",
+      "KGeeMediWorld keeps hospitals, pharmacies, and clinics stocked with the supplies they count on. You get dependable inventory, fast turnaround, and a team that treats your supply chain like their own.",
     primaryCta: { label: "Call to order", href: "tel:+15550100199" },
     secondaryCta: { label: "Email us", href: "mailto:orders@kgeemediworld.example" },
   },
@@ -116,8 +116,8 @@ export const siteContent: SiteContent = {
     heading: "Who we are",
     lead: "A medical supply distributor built around one promise: your shelves stay stocked.",
     body: [
-      "KGeeMediWorld supplies the healthcare businesses that care for everyone else. We deliver the consumables, equipment, and everyday essentials that hospitals, pharmacies, and clinics rely on — sourced from vetted manufacturers and delivered on a schedule you can plan around.",
-      "We're not a marketplace or a middleman you have to chase for updates. We're a delivery partner: real people, predictable timelines, and a catalog broad enough to consolidate your ordering with a single dependable source.",
+      "KGeeMediWorld supplies the healthcare businesses that care for everyone else. We deliver the consumables, equipment, and everyday essentials that hospitals, pharmacies, and clinics rely on. Everything comes from manufacturers we have vetted ourselves, on a schedule you can actually plan around.",
+      "We're not a marketplace, and we're not a middleman you have to chase for updates. When you call, a real person who knows your account picks up. Timelines hold, and our catalog is broad enough that one dependable supplier can cover your ordering.",
     ],
   },
 
@@ -128,7 +128,7 @@ export const siteContent: SiteContent = {
       {
         title: "Bulk supply delivery",
         description:
-          "Wholesale quantities of consumables, PPE, wound care, and diagnostics — delivered to your loading dock, not your doorstep.",
+          "Wholesale quantities of consumables, PPE, wound care, and diagnostics, delivered straight to your loading dock.",
         icon: "Truck",
       },
       {
@@ -154,7 +154,7 @@ export const siteContent: SiteContent = {
 
   whyUs: {
     heading: "Why facilities choose us",
-    intro: "The difference is dependability — measured in on-time deliveries, not promises.",
+    intro: "The difference is dependability. We measure it in on-time deliveries, not promises.",
     items: [
       {
         title: "On time, every time",
@@ -168,7 +168,7 @@ export const siteContent: SiteContent = {
       },
       {
         title: "A real account team",
-        description: "Talk to people who know your facility — not a ticket queue.",
+        description: "Talk to people who know your facility, not a ticket queue.",
         icon: "Headset",
       },
       {
@@ -182,7 +182,7 @@ export const siteContent: SiteContent = {
   contact: {
     heading: "Get in touch",
     intro:
-      "Ready to simplify your medical supply chain? Reach us directly — a real person will help you set up an account or place an order.",
+      "Ready to simplify your medical supply chain? Give us a call and a real person will help you set up an account or place your first order.",
     phone: "(555) 010-0199",
     phoneHref: "tel:+15550100199",
     email: "orders@kgeemediworld.example",

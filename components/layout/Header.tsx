@@ -12,7 +12,7 @@ export function Header() {
       <Container className="flex h-16 items-center justify-between gap-4">
         <a
           href="#top"
-          aria-label={`${name} — back to top`}
+          aria-label={`${name}, back to top`}
           className="rounded-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
         >
           <Logo />

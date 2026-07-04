@@ -13,7 +13,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const title = `${siteContent.name} — ${siteContent.tagline}`;
+const title = `${siteContent.name} | ${siteContent.tagline}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
