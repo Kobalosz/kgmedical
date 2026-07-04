@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" width="960" height="420" font-family="Inter, &#39;Helvetica Neue&#39;, Arial, sans-serif">
+          <defs>
+            <linearGradient id="g1ah" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0D9488"></stop><stop offset="1" stop-color="#10B981"></stop></linearGradient>
+          </defs>
+          <rect x="0" y="0" width="960" height="420" rx="24" fill="#F0FDFA"></rect>
+          <circle cx="850" cy="40" r="130" fill="#A7F3D0" opacity="0.4"></circle>
+          <circle cx="60" cy="380" r="120" fill="#99F6E4" opacity="0.4"></circle>
+          <line x1="40" y1="310" x2="920" y2="310" stroke="#CBD5E1" stroke-width="2"></line>
+          <path d="M-10,332 C180,332 230,206 420,206 C560,206 600,300 782,300" fill="none" stroke="#0D9488" stroke-width="5" stroke-dasharray="16 14" stroke-linecap="round"></path>
+          
+          <g>
+            <g transform="translate(118,60)">
+              <path d="M22,8 L22,4 Q22,0 26,0 L34,0 Q38,0 38,4 L38,8" fill="none" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"></path>
+              <rect x="2" y="8" width="56" height="38" rx="7" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"></rect>
+              <rect x="26" y="15" width="8" height="24" rx="2" fill="#0D9488"></rect>
+              <rect x="18" y="23" width="24" height="8" rx="2" fill="#0D9488"></rect>
+            </g>
+          </g>
+          <g>
+            <g transform="translate(216,118)">
+              <rect x="7" y="0" width="26" height="12" rx="3" fill="#0F766E"></rect>
+              <rect x="2" y="12" width="36" height="46" rx="7" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"></rect>
+              <rect x="4" y="26" width="32" height="18" fill="#0D9488"></rect>
+              <rect x="17.5" y="29" width="5" height="12" rx="1" fill="#FFFFFF"></rect>
+              <rect x="14" y="32.5" width="12" height="5" rx="1" fill="#FFFFFF"></rect>
+            </g>
+          </g>
+          <g>
+            <g transform="translate(64,152)">
+              <g transform="rotate(-18 23 10)">
+                <rect x="0" y="0" width="46" height="20" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"></rect>
+                <path d="M23,0 L23,20 L10,20 A10,10 0 0 1 10,0 Z" fill="#10B981"></path>
+              </g>
+              <circle cx="56" cy="34" r="9" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5"></circle>
+              <line x1="50" y1="34" x2="62" y2="34" stroke="#CBD5E1" stroke-width="2"></line>
+            </g>
+          </g>
+          
+          <g>
+            <path d="M845,134 L831,110 L859,110 Z" fill="#0D9488"></path>
+            <circle cx="845" cy="94" r="22" fill="url(#g1ah)"></circle>
+            <rect x="841" y="84" width="8" height="20" rx="2" fill="#FFFFFF"></rect>
+            <rect x="835" y="90" width="20" height="8" rx="2" fill="#FFFFFF"></rect>
+          </g>
+          
+          <g>
+            <rect x="770" y="170" width="150" height="140" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"></rect>
+            <rect x="770" y="170" width="150" height="32" fill="url(#g1ah)"></rect>
+            <text x="845" y="191" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#FFFFFF">PHARMACY</text>
+            <rect x="786" y="216" width="28" height="24" rx="3" fill="#99F6E4"></rect>
+            <rect x="826" y="216" width="28" height="24" rx="3" fill="#99F6E4"></rect>
+            <rect x="866" y="216" width="28" height="24" rx="3" fill="#99F6E4"></rect>
+            <rect x="786" y="252" width="28" height="24" rx="3" fill="#99F6E4"></rect>
+            <rect x="866" y="252" width="28" height="24" rx="3" fill="#99F6E4"></rect>
+            <rect x="826" y="252" width="28" height="58" rx="3" fill="#0F766E"></rect>
+            <rect x="847" y="278" width="4" height="8" rx="2" fill="#FFFFFF"></rect>
+          </g>
+          
+          <g>
+            <g transform="translate(150,143) scale(0.86)">
+              <ellipse cx="180" cy="196" rx="172" ry="8" fill="#CBD5E1" opacity="0.6"></ellipse>
+              <path d="M18,158 L18,84 C18,71 28,62 40,62 L246,62 C270,62 291,73 305,93 L330,129 C336,138 339,147 339,156 L339,162 C339,169 333,174 326,174 L31,174 C24,174 18,169 18,162 Z" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"></path>
+              <path d="M256,76 L272,76 C287,76 299,84 307,97 L321,118 L256,118 Z" fill="#99F6E4"></path>
+              <line x1="236" y1="130" x2="236" y2="166" stroke="#E2E8F0" stroke-width="2"></line>
+              <rect x="26" y="140" width="288" height="11" rx="5.5" fill="url(#g1ah)"></rect>
+              <rect x="30" y="80" width="40" height="40" rx="10" fill="url(#g1ah)"></rect>
+              <rect x="46" y="88" width="8" height="24" rx="2" fill="#FFFFFF"></rect>
+              <rect x="38" y="96" width="24" height="8" rx="2" fill="#FFFFFF"></rect>
+              <text x="80" y="102" font-family="Inter,sans-serif" font-size="20" font-weight="800" fill="#0F766E">KGee<tspan fill="#1E293B">MediWorld</tspan></text>
+              <text x="81" y="120" font-family="Inter,sans-serif" font-size="7" font-weight="600" letter-spacing="1.5" fill="#64748B">MEDICAL SUPPLY DELIVERY</text>
+              <circle cx="84" cy="170" r="24" fill="#1E293B"></circle><circle cx="84" cy="170" r="11" fill="#CBD5E1"></circle><circle cx="84" cy="170" r="4" fill="#64748B"></circle>
+              <circle cx="272" cy="170" r="24" fill="#1E293B"></circle><circle cx="272" cy="170" r="11" fill="#CBD5E1"></circle><circle cx="272" cy="170" r="4" fill="#64748B"></circle>
+              <rect x="332" y="132" width="8" height="13" rx="3" fill="#CBD5E1"></rect>
+            </g>
+          </g>
+        </svg>
