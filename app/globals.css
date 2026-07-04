@@ -184,3 +184,62 @@
     animation: none !important;
   }
 }
+
+/* Hero entrance choreography: staggered fade-up on first paint. */
+@keyframes kg-enter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.kg-enter {
+  opacity: 0;
+  animation: kg-enter 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.kg-delay-1 {
+  animation-delay: 0.12s;
+}
+.kg-delay-2 {
+  animation-delay: 0.24s;
+}
+.kg-delay-3 {
+  animation-delay: 0.36s;
+}
+.kg-delay-4 {
+  animation-delay: 0.3s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .kg-enter {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/*
+ * Scroll-driven section reveal — progressive enhancement only.
+ * Browsers without animation-timeline support simply render sections
+ * statically (the keyframes never run, so nothing is ever hidden).
+ */
+@keyframes kg-rise {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .kg-reveal {
+      animation: kg-rise 0.6s ease-out both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 35%;
+    }
+  }
+}
