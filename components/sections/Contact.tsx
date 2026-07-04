@@ -11,7 +11,7 @@ export function Contact() {
   return (
     <section id="contact" className="scroll-mt-20 bg-slate-50 py-20 sm:py-28">
       <Container>
-        <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
+        <div className="kg-reveal grid gap-10 lg:grid-cols-2 lg:gap-16">
           <div>
             <SectionHeading title={contact.heading} description={contact.intro} />
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -35,7 +35,7 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+          <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-shadow duration-300 hover:shadow-md">
             <dl className="space-y-6">
               <div className="flex gap-4">
                 <Phone className="mt-0.5 size-5 shrink-0 text-teal-700" aria-hidden="true" />

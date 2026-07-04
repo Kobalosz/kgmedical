@@ -26,15 +26,15 @@ export function Services() {
             className="h-auto w-44 shrink-0 sm:w-56 md:w-72"
           />
         </div>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="kg-reveal mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {services.items.map((service) => {
             const Icon = iconMap[service.icon];
             return (
               <div
                 key={service.title}
-                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+                className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-teal-200 hover:shadow-lg"
               >
-                <div className="flex size-12 items-center justify-center rounded-xl bg-teal-100 text-teal-700">
+                <div className="flex size-12 items-center justify-center rounded-xl bg-teal-100 text-teal-700 transition-colors duration-300 group-hover:bg-teal-700 group-hover:text-white">
                   <Icon className="size-6" aria-hidden="true" />
                 </div>
                 <h3 className="mt-4 text-lg font-semibold text-slate-900">

@@ -13,7 +13,7 @@ export function About() {
       className="scroll-mt-20 border-t border-slate-100 bg-white py-20 sm:py-28"
     >
       <Container>
-        <div className="grid gap-10 lg:grid-cols-[1fr_1.3fr] lg:gap-16">
+        <div className="kg-reveal grid gap-10 lg:grid-cols-[1fr_1.3fr] lg:gap-16">
           <div>
             <SectionHeading title={about.heading} />
             <p className="mt-4 text-xl font-medium text-pretty text-slate-800">
@@ -29,7 +29,7 @@ export function About() {
           </div>
         </div>
 
-        <div className="mt-14 border-t border-slate-100 pt-10">
+        <div className="kg-reveal mt-14 border-t border-slate-100 pt-10">
           <p className="text-sm font-semibold tracking-wide text-teal-700 uppercase">
             Our delivery fleet
           </p>

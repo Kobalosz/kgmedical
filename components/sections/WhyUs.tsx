@@ -14,12 +14,12 @@ export function WhyUs() {
           description={whyUs.intro}
           className="max-w-2xl"
         />
-        <div className="mt-12 grid gap-8 sm:grid-cols-2">
+        <div className="kg-reveal mt-12 grid gap-8 sm:grid-cols-2">
           {whyUs.items.map((value) => {
             const Icon = iconMap[value.icon];
             return (
-              <div key={value.title} className="flex gap-4">
-                <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700">
+              <div key={value.title} className="group flex gap-4">
+                <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700 transition-colors duration-300 group-hover:bg-emerald-600 group-hover:text-white">
                   <Icon className="size-5" aria-hidden="true" />
                 </div>
                 <div>
